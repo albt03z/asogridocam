@@ -33,3 +33,18 @@ class Clients(models.Model):
 
     def __str__(self):
         return f'{self.name} {self.surname}'
+    
+    from django.db import models
+
+class Subscriber(models.Model):
+    """Modelo para los suscriptores del boletín."""
+    email = models.EmailField(unique=True, verbose_name='Correo electrónico')
+    subscribed_at = models.DateTimeField(auto_now_add=True, verbose_name='Fecha de suscripción')
+
+    class Meta:
+        db_table = 'subscribers'
+        verbose_name = 'Suscriptor'
+        verbose_name_plural = 'Suscriptores'
+
+    def __str__(self):
+        return self.email

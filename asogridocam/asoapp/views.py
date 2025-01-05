@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.views.generic import TemplateView
 from django.views.generic import FormView
 from django.urls import reverse_lazy
-from .forms import ClientForm
+from .forms import ClientForm, SubscriberForm
 
 # Create your views here.
 class HomeView(TemplateView, FormView):
