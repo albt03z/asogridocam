@@ -1,0 +1,8 @@
+venv-asogridocam/
+*.pyc
+*.pyo
+__pycache__/
+.DS_Store
+Thumbs.db
+config.json
+migrations/

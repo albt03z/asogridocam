@@ -1,0 +1,109 @@
+{% load static %}
+<!--CONTACT AREA STARTS-->
+<section class="contact sp1" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 m-auto">
+                <div class="contact-header-area text-center heading10">
+                    <h5><img src="{% static 'images/logos/logo-2.png' %}" alt="" width="48" height="48">Contacto</h5>
+                    <h2 class="text-anime-style-3">Conéctate con Asogridocam</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5" data-aos="zoom-in" data-aos-duration="1200">
+                    <div class="contact-info-area">
+                        <h3>Información de Contacto</h3>
+                        <p>Estamos aquí para apoyarte. Contáctanos si tienes preguntas o deseas colaborar con nuestros proyectos agrícolas sostenibles.</p>
+                        <div class="space32"></div>
+                        <div class="contact-auhtor-box">
+                            <div class="icons">
+                                <img src="{% static 'images/elements/svgs/location2.svg' %}" alt="">
+                            </div>
+                            <div class="content">
+                                <h4>Nuestra Ubicación</h4>
+                                <a href="#">Chocó, Colombia <br class="d-lg-block d-none"> Dirección exacta próximamente.</a>
+                            </div>
+                        </div>
+                        <div class="space40"></div>
+                        <div class="contact-auhtor-box">
+                            <div class="icons">
+                                <img src="{% static 'images/elements/svgs/phone2.svg' %}" alt="">
+                            </div>
+                            <div class="content">
+                                <h4>Teléfono</h4>
+                                <a href="tel:+57-123-456-7890">+57 123-456-7890 <br> +57 321-654-0987</a>
+                            </div>
+                        </div>
+                        <div class="space40"></div>
+                        <div class="contact-auhtor-box">
+                            <div class="icons">
+                                <img src="{% static 'images/elements/svgs/email2.svg' %}" alt="">
+                            </div>
+                            <div class="content">
+                                <h4>Correo Electrónico</h4>
+                                <a href="mailto:info@asogridocam.com">info@asogridocam.com <br> soporte@asogridocam.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7" data-aos="zoom-in" data-aos-duration="1200">
+                    <div class="contact-boxarea">
+                        <h3>Envíanos un Mensaje</h3>
+                        <p>Estamos disponibles para resolver tus dudas y explorar oportunidades de colaboración para el desarrollo agrícola.</p>
+                        <div class="space22"></div>
+                        <form method="post" action="{% url 'home' %}">
+                            {% csrf_token %}
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="input-area">
+                                        {{ form.name.label_tag }}
+                                        {{ form.name }}
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="input-area">
+                                        {{ form.surname.label_tag }}
+                                        {{ form.surname }}
+                                    </div>
+                                </div>
+                                <div class="space16"></div>
+                                <div class="col-lg-6">
+                                    <div class="input-area">
+                                        {{ form.email.label_tag }}
+                                        {{ form.email }}
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="input-area">
+                                        {{ form.phone_number.label_tag }}
+                                        {{ form.phone_number }}
+                                    </div>
+                                </div>
+                                <div class="space16"></div>
+                                <div class="col-lg-12">
+                                    <div class="input-area">
+                                        {{ form.country.label_tag }}
+                                        {{ form.country }}
+                                    </div>
+                                </div>
+                                <div class="space16"></div>
+                                <div class="col-lg-12">
+                                    <div class="input-area">
+                                        {{ form.message.label_tag }}
+                                        {{ form.message }}
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="input-area">
+                                        <button class="header-btn11">Enviar Mensaje</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>                                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--CONTACT AREA END-->
