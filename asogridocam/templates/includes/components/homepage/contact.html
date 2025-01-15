@@ -51,8 +51,34 @@
                         <h3>Envíanos un Mensaje</h3>
                         <p>Estamos disponibles para resolver tus dudas y explorar oportunidades de colaboración para el desarrollo agrícola.</p>
                         <div class="space22"></div>
-                        <form method="post" action="{% url 'home' %}">
+                        <form method="post" action="{% url 'home' %}#contact">
                             {% csrf_token %}
+                            <div class="row">
+                                <!-- Tu formulario actual aquí -->
+                                
+                                {% if form.errors %}
+                                    <div class="col-lg-12">
+                                        <div class="alert alert-danger">
+                                            {% for field in form %}
+                                                {% if field.errors %}
+                                                    <p>{{ field.label }}: {{ field.errors|striptags }}</p>
+                                                {% endif %}
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                {% endif %}
+                        
+                                {% if messages %}
+                                    <div class="col-lg-12">
+                                        {% for message in messages %}
+                                            <div class="alert {% if message.tags == 'error' %}alert-danger{% else %}alert-success{% endif %}">
+                                                {{ message }}
+                                            </div>
+                                        {% endfor %}
+                                    </div>
+                                {% endif %}
+                                
+                            </div>
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="input-area">
