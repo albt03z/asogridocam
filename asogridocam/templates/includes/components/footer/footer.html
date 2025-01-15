@@ -60,10 +60,20 @@
             <div class="col-lg-4 col-md-6">
                 <div class="footer-logo-area3">
                     <h3>Suscríbete a Nuestro Boletín</h3>
-                    <form action="#">
-                        <input type="email" placeholder="Ingresa tu correo" required>
-                        <button class="header-btn11"> Suscribirse <i class="fa-solid fa-arrow-right"></i></button>
+                    <form method="POST" action="{% url 'home' %}">
+                        {% csrf_token %}
+                        {{ subscriber_form.email }}
+                        <button type="submit" name="subscribe" class="header-btn11">
+                            Suscribirse <i class="fa-solid fa-arrow-right"></i>
+                        </button>
                     </form>
+                    {% if messages %}
+                        {% for message in messages %}
+                            <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}" role="alert">
+                                {{ message }}
+                            </div>
+                        {% endfor %}
+                    {% endif %}
                 </div>
             </div>
         </div>

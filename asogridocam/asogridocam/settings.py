@@ -74,13 +74,20 @@ WSGI_APPLICATION = 'asogridocam.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
+#DATABASES = {
+    #'default': {
+        #'ENGINE': 'django.db.backends.mysql',
+        #'NAME': 'asogridocamdb',
+        #'USER': 'root',
+        #'PASSWORD': 'Agc3103.',
+        #'PORT': '3306',
+    #}
+#}
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'asogridocamdb',
-        'USER': 'root',
-        'PASSWORD': 'Agc3103.',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'asogridocamdb.sqlite3',
     }
 }
 
