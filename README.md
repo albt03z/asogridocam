@@ -44,6 +44,7 @@ Nos encantaría recibir contribuciones de otros desarrolladores. Puedes colabora
 
 ## 📂 Estructura del Proyecto
 
+```bash
 asogridocam/
 ├── asoapp/
 │   ├── __init__.py
@@ -68,6 +69,7 @@ asogridocam/
 │   ├── includes/
 │   ├── index.html
 ├── manage.py
+```
 
 ---
 
