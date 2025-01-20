@@ -83,7 +83,7 @@ Si tienes preguntas o deseas colaborar, puedes contactarnos a través de:
 
 ## 🖼️ Previsualización
 
-![alt text](image.png)
+![alt text](/screens/image.png)
 
 ---
 

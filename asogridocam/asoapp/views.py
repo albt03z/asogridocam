@@ -41,3 +41,6 @@ class HomeView(TemplateView, FormView):
                     'form': contact_form,
                     'subscriber_form': SubscriberForm()
                 })
+
+class AboutView(TemplateView):
+    template_name = 'aboutus.html'

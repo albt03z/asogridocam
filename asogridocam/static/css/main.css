@@ -1723,6 +1723,212 @@ img {
   margin: 0 32px 0 0;
 }
 
+/*== Sub Pages ==*/
+/*== About Us ==*/
+
+/*== Hero - About Us ==*/
+.about-header-area {
+  position: relative;
+  background: url('../images/backgrounds/hero-bg.png') no-repeat center center/cover;
+  z-index: 1;
+  padding: 160px 0 80px;
+}
+
+.about-header-area .elements1 {
+  position: absolute;
+  z-index: -1;
+}
+
+.about-header-area .star2 {
+  position: absolute;
+  right: 0;
+}
+
+.about-header-area .about-inner-header h1 {
+  color: var(--ztc-text-text-10);
+  transition: all 0.4s;
+}
+
+.about-header-area .about-inner-header a {
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s16);
+  line-height: var(--ztc-font-size-font-s16);
+  font-weight: var(--ztc-weight-regular);
+  color: var(--ztc-text-text-1);
+  display: inline-block;
+  transition: all 0.4s;
+  line-height: var(--ztc-font-size-font-s24);
+}
+
+.about-header-area .about-inner-header a i {
+  margin: 0 8px;
+}
+
+.about-header-area .about-inner-header a span {
+  display: inline-block;
+  font-weight: var(--ztc-weight-semibold);
+}
+
+/*== About - About Us ==*/
+.about1-section-area {
+  position: relative;
+  z-index: 1;
+}
+
+.about1-section-area .about-images {
+  position: relative;
+}
+
+.about1-section-area .about-images img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100px 100px 100px 100px;
+}
+
+.about1-section-area .about-images .star1 {
+  height: 78px;
+  width: 78px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.about1-section-area .about-content-area {
+  position: relative;
+  padding: 0 50px;
+}
+
+.about1-section-area .about-content-area .arrow-circle {
+  border-radius: 50%;
+  display: inline-block;
+  padding: 10px;
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.about1-section-area .about-content-area .arrow-circle .arrow {
+  position: absolute;
+  left: 40%;
+  right: 50%;
+  top: 40%;
+  bottom: 50%;
+}
+
+.about1-section-area .about-content-area .btn-area {
+  margin-top: 32px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about1-section-area .about-content-area {
+    margin-bottom: 30px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .about1-section-area .about-content-area {
+    margin-bottom: 30px;
+    padding: 0;
+    margin-top: 30px;
+  }
+}
+
+.about1-section-area .about-auhtor-images {
+  position: relative;
+  z-index: 1;
+  top: 160px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about1-section-area .about-auhtor-images {
+    top: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .about1-section-area .about-auhtor-images {
+    top: 0;
+  }
+}
+
+.about1-section-area .about-auhtor-images img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100px;
+}
+
+.about1-section-area .about-auhtor-images .elements5 {
+  width: 205px;
+  height: 141px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 4px;
+  position: absolute;
+  top: -100px;
+  right: -50px;
+  z-index: -1;
+}
+
+/*== Testimonials ==*/
+.slider-section-area {
+  margin: 4rem 0;
+  background: url('../images/backgrounds/hero-bg.png') no-repeat center center/cover;
+  position: relative;
+  z-index: 1;
+}
+.slider-section-area .sldier-head p {
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s20);
+  line-height: var(--ztc-font-size-font-s30);
+  font-weight: var(--ztc-weight-semibold);
+  color: var(--ztc-text-text-2);
+}
+@media (max-width: 767px) {
+  .slider-section-area .sldier-head p {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .slider-section-area .sldier-head p {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+.slider-section-area .slider-images-area .img1 img {
+  height: 38px;
+  width: 120px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.slider-section-area.slider-inner {
+  background: url('../images/backgrounds/hero-bg.png') no-repeat center center/cover;
+}
+.slider-section-area.slider-inner .sldier-head p {
+  color: var(--ztc-text-text-1);
+}
+@media (max-width: 767px) {
+  .slider-section-area.slider-inner .sldier-head p {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .slider-section-area.slider-inner .sldier-head p {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+.slider-section-area.slider-inner .slider-images-area .img1 img {
+  filter: brightness(0) invert(1);
+}
+
 /*== More CSS ==*/
 .reveal {
   position: relative;

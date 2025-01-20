@@ -85,6 +85,9 @@ function handleHeaderAndMenu() {
             removeAllActive();
             activeLink.classList.add('active');
         }
+
+    // NICE SELECT PARA SELECT
+    $('select').niceSelect();
     });
 }
 
