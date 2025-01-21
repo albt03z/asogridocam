@@ -79,16 +79,13 @@ function handleHeaderAndMenu() {
 
     // Manejar el estado inicial
     document.addEventListener('DOMContentLoaded', () => {
-        const hash = window.location.hash || '#home';
+        const hash = window.location.hash || '#hero';
         const activeLink = document.querySelector(`.nav-link[href="${hash}"]`);
         if (activeLink) {
             removeAllActive();
             activeLink.classList.add('active');
         }
-
-    // NICE SELECT PARA SELECT
-    $('select').niceSelect();
-    });
+    })
 }
 
 // Inicializar cuando el DOM esté listo
