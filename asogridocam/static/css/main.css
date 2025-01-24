@@ -1784,7 +1784,8 @@ img {
 
 .about-header-area .elements1 {
   position: absolute;
-  z-index: -1;
+  margin-top: 20px;
+  z-index: -1; 
 }
 
 .about-header-area .star2 {
@@ -2199,6 +2200,279 @@ img {
   color: var(--ztc-text-text-4);
   transition: all 0.4s;
 }
+
+/*== Contact Us ==*/
+
+/*== Hero - Contact Us ==*/
+
+.contact-main-inner-area .contact-header .number-address-area {
+  display: flex;
+  align-items: center;
+  border-radius: 7px;
+  background: var(--ztc-text-text-1);
+  position: relative;
+  transition: all 0.4s;
+}
+
+@media (max-width: 767px) {
+  .contact-main-inner-area .contact-header .number-address-area {
+    display: block;
+  }
+}
+
+.contact-main-inner-area .contact-header .number-address-area .phone-number {
+  display: flex;
+  align-items: center;
+  margin: 0 40px 0 0;
+}
+
+@media (max-width: 767px) {
+  .contact-main-inner-area .contact-header .number-address-area .phone-number {
+    margin: 0 0 20px 0;
+  }
+}
+
+.contact-main-inner-area .contact-header .number-address-area .phone-number .img1 {
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 50%;
+  transition: all 0.4s;
+  background: #EFE9F8;
+}
+
+@media (max-width: 767px) {
+  .contact-main-inner-area .contact-header .number-address-area .phone-number .img1 {
+    width: 60px;
+  }
+}
+
+.contact-main-inner-area .contact-header .number-address-area .phone-number .content {
+  margin-left: 16px;
+}
+
+.contact-main-inner-area .contact-header .number-address-area .phone-number .content p {
+  color: var(--ztc-text-text-3);
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s16);
+  font-style: normal;
+  font-weight: var(--ztc-weight-medium);
+  line-height: 16px;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.contact-main-inner-area .contact-header .number-address-area .phone-number .content a {
+  color: var(--ztc-text-text-2);
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s20);
+  font-style: normal;
+  font-weight: var(--ztc-weight-semibold);
+  line-height: 20px;
+  display: block;
+  transition: all 0.4s;
+}
+
+.contact-main-inner-area .contact-header .number-address-area .phone-number .content a:hover {
+  color: var(--ztc-text-text-4);
+  transition: all 0.4s;
+}
+
+.contact-main-inner-area .contact-header .number-address-area2 {
+  display: flex;
+  align-items: center;
+  border-radius: 7px;
+  position: relative;
+  transition: all 0.4s;
+  justify-content: space-between;
+  background: var(--ztc-text-text-1);
+}
+
+@media (max-width: 767px) {
+  .contact-main-inner-area .contact-header .number-address-area2 {
+    display: block;
+    background: var(--ztc-text-text-1);
+  }
+}
+
+.contact-main-inner-area .contact-header .number-address-area2 .phone-number {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .contact-main-inner-area .contact-header .number-address-area2 .phone-number {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+}
+
+.contact-main-inner-area .contact-header .number-address-area2 .phone-number .img1 {
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 50%;
+  transition: all 0.4s;
+  background: #EFE9F8;
+}
+
+@media (max-width: 767px) {
+  .contact-main-inner-area .contact-header .number-address-area2 .phone-number .img1 {
+    margin-bottom: 20px;
+  }
+}
+
+.contact-main-inner-area .contact-header .number-address-area2 .phone-number .content {
+  margin-left: 16px;
+}
+
+@media (max-width: 767px) {
+  .contact-main-inner-area .contact-header .number-address-area2 .phone-number .content {
+    margin-left: 0;
+  }
+}
+
+.contact-main-inner-area .contact-header .number-address-area2 .phone-number .content p {
+  color: var(--ztc-text-text-3);
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s16);
+  font-style: normal;
+  font-weight: var(--ztc-weight-medium);
+  line-height: 16px;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.contact-main-inner-area .contact-header .number-address-area2 .phone-number .content a {
+  color: var(--ztc-text-text-2);
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s20);
+  font-style: normal;
+  font-weight: var(--ztc-weight-semibold);
+  line-height: 26px;
+  display: block;
+  transition: all 0.4s;
+}
+
+.contact-main-inner-area .contact-header .number-address-area2 .phone-number .content a:hover {
+  color: var(--ztc-text-text-4);
+  transition: all 0.4s;
+}
+
+.contact-main-inner-area .contact-header .number-address-area2 .phone-number .map {
+  color: var(--ztc-text-text-4);
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s20);
+  font-style: normal;
+  font-weight: var(--ztc-weight-semibold);
+  line-height: 20px;
+  display: inline-block;
+  text-decoration-line: underline;
+}
+
+.contact-main-inner-area .contact-form-area {
+  border-radius: 7px;
+  background: var(--ztc-text-text-1);
+  position: relative;
+  z-index: 1;
+  box-shadow: 0px 4px 48px 0px rgba(0, 0, 0, 0.09);
+  padding: 32px;
+}
+
+@media (max-width: 767px) {
+  .contact-main-inner-area .contact-form-area {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .contact-main-inner-area .contact-form-area {
+    margin-top: 30px;
+  }
+}
+
+.contact-main-inner-area .contact-form-area h4 {
+  color: var(--ztc-text-text-2);
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s24);
+  font-style: normal;
+  font-weight: var(--ztc-weight-semibold);
+  line-height: 24px;
+  display: inline-block;
+}
+
+.contact-main-inner-area .contact-form-area .input-area input {
+  border-radius: 8px;
+  border: 1px solid #E6E6E6;
+  background: var(--Neutral-White, #FFF);
+  width: 100%;
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s16);
+  font-weight: var(--ztc-weight-semibold);
+  color: var(--ztc-text-text-2);
+  padding: 16px;
+  height: 48px;
+  margin-top: 24px;
+}
+
+.contact-main-inner-area .contact-form-area .input-area input::-moz-placeholder {
+  color: var(--ztc-text-text-3);
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s16);
+  font-style: normal;
+  font-weight: var(--ztc-weight-regular);
+  line-height: 16px;
+}
+
+.contact-main-inner-area .contact-form-area .input-area input::placeholder {
+  color: var(--ztc-text-text-3);
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s16);
+  font-style: normal;
+  font-weight: var(--ztc-weight-regular);
+  line-height: 16px;
+}
+
+.contact-main-inner-area .contact-form-area .input-area textarea {
+  border-radius: 8px;
+  border: 1px solid #E6E6E6;
+  background: var(--Neutral-White, #FFF);
+  width: 100%;
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s16);
+  font-weight: var(--ztc-weight-semibold);
+  color: var(--ztc-text-text-2);
+  padding: 16px;
+  height: 120px;
+  margin-top: 24px;
+}
+
+.contact-main-inner-area .contact-form-area .input-area textarea::-moz-placeholder {
+  color: var(--ztc-text-text-3);
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s16);
+  font-style: normal;
+  font-weight: var(--ztc-weight-regular);
+  line-height: 16px;
+}
+
+.contact-main-inner-area .contact-form-area .input-area textarea::placeholder {
+  color: var(--ztc-text-text-3);
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s16);
+  font-style: normal;
+  font-weight: var(--ztc-weight-regular);
+  line-height: 16px;
+}
+
+.contact-main-inner-area .contact-form-area .input-area button {
+  border: none;
+  outline: none;
+  margin-top: 24px;
+}
+
 
 /*== More CSS ==*/
 .reveal {

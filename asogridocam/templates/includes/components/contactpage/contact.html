@@ -1,57 +1,54 @@
 {% load static %}
-<!--CONTACT AREA STARTS-->
-<section class="contact sp1" id="contact">
+<!--===== CONTACT AREA STARTS =======-->
+<section class="contact-main-inner-area sp1">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-12 m-auto">
-                <div class="contact-header-area text-center heading10">
-                    <h5><img src="{% static 'images/logos/logo-2.png' %}" alt="" width="48" height="48">Contacto</h5>
-                    <h2 class="text-anime-style-3">Conéctate con Asogridocam</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-5" data-aos="zoom-in" data-aos-duration="1200">
-                    <div class="contact-info-area">
-                        <h3>Información de Contacto</h3>
-                        <p>Estamos aquí para apoyarte. Contáctanos si tienes preguntas o deseas colaborar con nuestros proyectos agrícolas sostenibles.</p>
-                        <div class="space32"></div>
-                        <div class="contact-auhtor-box">
-                            <div class="icons">
-                                <img src="{% static 'images/elements/svgs/location2.svg' %}" alt="">
-                            </div>
-                            <div class="content">
-                                <h4>Nuestra Ubicación</h4>
-                                <a href="#">Chocó, Colombia <br class="d-lg-block d-none"> Dirección exacta próximamente.</a>
-                            </div>
-                        </div>
-                        <div class="space40"></div>
-                        <div class="contact-auhtor-box">
-                            <div class="icons">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="heading2 contact-header">
+                    <h5>Contáctanos</h5>
+                    <h2>Ponte en Contacto con Asogridocam <br> Valoramos tu Conexión</h2>
+                    <p>En Asogridocam, estamos comprometidos en apoyar a la comunidad agrícola del Chocó. Creemos en la comunicación abierta y estamos aquí para resolver tus inquietudes. Puedes comunicarte con nosotros a través de teléfono, correo electrónico o visitarnos en nuestras oficinas durante el horario laboral.</p>
+                    <div class="space32"></div>
+                    <div class="number-address-area">
+                        <div class="phone-number">
+                            <div class="img1">
                                 <img src="{% static 'images/elements/svgs/phone2.svg' %}" alt="">
                             </div>
                             <div class="content">
-                                <h4>Teléfono</h4>
-                                <a href="tel:+57-123-456-7890">+57 123-456-7890 <br> +57 321-654-0987</a>
+                                <p>Número Telefónico</p>
+                                <a href="tel:123-456-7890">+57 123-456-7890</a>
                             </div>
                         </div>
-                        <div class="space40"></div>
-                        <div class="contact-auhtor-box">
-                            <div class="icons">
+
+                        <div class="phone-number m-0">
+                            <div class="img1">
                                 <img src="{% static 'images/elements/svgs/email2.svg' %}" alt="">
                             </div>
                             <div class="content">
-                                <h4>Correo Electrónico</h4>
-                                <a href="mailto:info@asogridocam.com">info@asogridocam.com <br> soporte@asogridocam.com</a>
+                                <p>Correo Electrónico</p>
+                                <a href="mailto:info@asogridocam.org">info@asogridocam.org</a>
                             </div>
                         </div>
                     </div>
+                    <div class="space50"></div>
+                    <div class="number-address-area2">
+                        <div class="phone-number">
+                            <div class="img1">
+                                <img src="{% static 'images/elements/svgs/location2.svg' %}" alt="">
+                            </div>
+                            <div class="content">
+                                <a href="#">Carrera 5 #10-20, Quibdó, Chocó, Colombia</a>
+                            </div>
+                        </div>
+                   </div>
                 </div>
-                <div class="col-lg-7" data-aos="zoom-in" data-aos-duration="1200">
-                    <div class="contact-boxarea">
-                        <h3>Envíanos un Mensaje</h3>
-                        <p>Estamos disponibles para resolver tus dudas y explorar oportunidades de colaboración para el desarrollo agrícola.</p>
-                        <div class="space22"></div>
-                        <form method="post" action="{% url 'home' %}#contact">
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5">
+                <div class="contact-form-area">
+                    <h4>Contáctanos</h4>
+                    <div class="row">
+                        <form method="post" action="{% url 'contact' %}#contact">
                             {% csrf_token %}
                             <div class="row">
                                 {% if form.errors %}
@@ -123,11 +120,11 @@
                                     </div>
                                 </div>
                             </div>
-                        </form>                                
+                        </form>  
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!--CONTACT AREA END-->
+<!--===== CONTACT AREA ENDS =======-->

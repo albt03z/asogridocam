@@ -56,3 +56,35 @@ class AboutView(TemplateView):
         else:
             messages.error(request, 'Este correo ya está registrado o es inválido.')
             return redirect('about')
+
+class ContactView(TemplateView):
+    template_name = 'contactus.html'
+    form_class = ClientForm
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['form'] = ClientForm()
+        context['subscriber_form'] = SubscriberForm()
+        return context
+
+    def post(self, request, *args, **kwargs):
+        if 'subscribe' in request.POST:
+            subscriber_form = SubscriberForm(request.POST)
+            if subscriber_form.is_valid():
+                subscriber_form.save()
+                messages.success(request, '¡Gracias por suscribirte!')
+                return redirect('contact')
+            else:
+                messages.error(request, 'Este correo ya está registrado o es inválido.')
+                return redirect('contact')
+        else:
+            contact_form = ClientForm(request.POST)
+            if contact_form.is_valid():
+                contact_form.save()
+                messages.success(request, '¡Mensaje enviado correctamente!')
+                return redirect('contact')
+            else:
+                return render(request, self.template_name, {
+                    'form': contact_form,
+                    'subscriber_form': SubscriberForm()
+                })

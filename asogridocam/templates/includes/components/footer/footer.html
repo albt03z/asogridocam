@@ -9,7 +9,7 @@
                     <img src="{% static 'images/logos/logo.png' %}" alt="Asogridocam Logo" height="50" width="50">
                     <p>Conectamos a los agricultores del Chocó con el mercado global, promoviendo prácticas sostenibles y llevando productos agrícolas de alta calidad a cada rincón del mundo.</p>
                     <ul>
-                        <li><a href="#"><img src="{% static 'images/elements/social/facebook5.svg' %}" alt="Facebook"></a></li>
+                        <li><a href="https://www.facebook.com/asogridocam" target="_blank" rel="noopener noreferrer"><img src="{% static 'images/elements/social/facebook5.svg' %}" alt="Facebook"></a></li>
                         <li><a href="#"><img src="{% static 'images/elements/social/instagram5.png' %}" alt="Instagram"></a></li>
                     </ul>
                 </div>
@@ -24,7 +24,7 @@
                         <li><a href="services.html">Servicios</a></li>
                         <li><a href="projects.html">Proyectos</a></li>
                         <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contáctanos</a></li>
+                        <li><a href="{% url 'contact' %}">Contáctanos</a></li>
                     </ul>
                 </div>
             </div>
