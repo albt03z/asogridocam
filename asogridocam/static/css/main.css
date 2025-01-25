@@ -1465,7 +1465,7 @@ img {
   font-weight: var(--ztc-weight-regular);
 }
 
-.contact .contact-boxarea .input-area .nice-select .list {
+.contact .contact-boxarea .input-area .nice-select .list .country-areas {
   width: 100%;
 }
 
@@ -1593,6 +1593,7 @@ img {
   padding-left: 5px;
   transition: all 0.4s;
 }
+
 .footer5-section-area .footer-logo-area1 form {
   margin-top: 32px;
   background: #FFF4F9;
