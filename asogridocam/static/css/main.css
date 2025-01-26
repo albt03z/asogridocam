@@ -2276,7 +2276,7 @@ img {
 }
 
 .contact-main-inner-area .contact-header .number-address-area .phone-number .content a:hover {
-  color: var(--ztc-text-text-4);
+  color: var(--ztc-text-text-12);
   transition: all 0.4s;
 }
 
@@ -2358,12 +2358,12 @@ img {
 }
 
 .contact-main-inner-area .contact-header .number-address-area2 .phone-number .content a:hover {
-  color: var(--ztc-text-text-4);
+  color: var(--ztc-text-text-12);
   transition: all 0.4s;
 }
 
 .contact-main-inner-area .contact-header .number-address-area2 .phone-number .map {
-  color: var(--ztc-text-text-4);
+  color: var(--ztc-text-text-12);
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s20);
   font-style: normal;
