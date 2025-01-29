@@ -48,3 +48,17 @@ class Subscriber(models.Model):
 
     def __str__(self):
         return self.email
+    
+class Ally(models.Model):
+    name = models.CharField(max_length=100, verbose_name="Nombre del Aliado")
+    logo = models.ImageField(upload_to='allies/', verbose_name="Logo del Aliado", blank=True, null=True)
+    website = models.URLField(max_length=200, verbose_name="Sitio Web del Aliado", blank=True, null=True)
+    order = models.PositiveIntegerField(verbose_name="Orden de visualización", default=0)
+
+    class Meta:
+        verbose_name = "Aliado"
+        verbose_name_plural = "Aliados"
+        ordering = ['order']
+
+    def __str__(self):
+        return self.name

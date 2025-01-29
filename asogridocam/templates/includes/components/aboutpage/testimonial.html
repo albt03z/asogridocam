@@ -1,6 +1,6 @@
 {% load static %}
-<div class="space60"></div>
 <!--===== TESTIMONIAL AREA STARTS =======-->
+<div class="space60"></div>
 <section class="slider-section-area slider-inner sp5">
   <div class="space80"></div>
   <div class="container">
@@ -12,35 +12,20 @@
       </div>
       <div class="col-lg-10 text-center">
         <div class="slider-images-area carousel slide" data-bs-ride="carousel" id="carouselExample">
-          <div class="img1 carousel-inner">
-            <div class="carousel-item active">
-              <h1 style="color: var(--ztc-text-text-1);">Finca la Barranquita</h1>
+          <div class="carousel-inner">
+            {% for ally in allies %}
+            <div class="carousel-item {% if forloop.first %}active{% endif %}">
+              {% if ally.website %}
+              <a href="{{ ally.website }}">
+                {% if ally.logo %}
+                  <img src="{{ ally.logo.url }}" alt="{{ ally.name }}" style="max-width: 150px;">
+                {% else %}
+                  <h1 style="color: var(--ztc-text-text-1);">{{ ally.name }}</h1>
+                {% endif %}
+              </a>
+              {% endif %}
             </div>
-          </div>
-          <div class="img1 carousel-inner">
-            <div class="carousel-item">
-              <h1 style="color: var(--ztc-text-text-1);">Alcaldia del bajo baudo</h1>
-            </div>
-          </div>
-          <div class="img1 carousel-inner">
-            <div class="carousel-item">
-              <h1 style="color: var(--ztc-text-text-1);">Finca la Barranquita</h1>
-            </div>
-          </div>
-          <div class="img1 carousel-inner">
-            <div class="carousel-item">
-              <h1 style="color: var(--ztc-text-text-1);">Alcaldia del bajo baudo</h1>
-            </div>
-          </div>
-          <div class="img1 carousel-inner">
-            <div class="carousel-item">
-              <h1 style="color: var(--ztc-text-text-1);">Finca la Barranquita</h1>
-            </div>
-          </div>
-          <div class="img1 carousel-inner">
-            <div class="carousel-item">
-              <h1 style="color: var(--ztc-text-text-1);">Alcaldia del bajo baudo</h1>
-            </div>
+            {% endfor %}
           </div>
         </div>
       </div>

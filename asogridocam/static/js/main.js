@@ -91,3 +91,10 @@ function handleHeaderAndMenu() {
 // Inicializar cuando el DOM esté listo
 document.addEventListener('DOMContentLoaded', handleHeaderAndMenu);
 
+document.addEventListener("DOMContentLoaded", function() {
+    var carousel = new bootstrap.Carousel(document.querySelector("#carouselExample"), {
+      interval: 3000, // Cambiar cada 3 segundos
+      wrap: true // Permitir el looping infinito
+    });
+  });
+  

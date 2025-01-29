@@ -11,3 +11,9 @@ class ClientsAdmin(admin.ModelAdmin):
 class CountryAdmin(admin.ModelAdmin):
     list_display = ['name', 'alpha2_code', 'alpha3_code', 'flag']
     search_fields = ['name', 'alpha2_code', 'alpha3_code', 'flag']
+
+@admin.register(Ally)
+class AllyAdmin(admin.ModelAdmin):
+    list_display = ('name', 'order', 'website')
+    list_editable = ('order',)
+    search_fields = ('name',)
